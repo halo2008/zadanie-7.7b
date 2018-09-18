@@ -1,0 +1,77 @@
+.contact {
+	background-position: center;	
+	background: url('/images/map-image.png');
+	background-color: #000;	
+	height: 70vh;
+	overflow: hidden;	
+	width: 100%;
+	background-size: cover;
+	flex-wrap: wrap;
+	h3 {
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 998px) {
+		  .contact {
+    			height: 100vh;    			
+  			}		
+		}
+
+.btn-center {
+	padding-top: 100px;
+	margin: 0 auto;
+	text-align: center;
+	button { //button mixin??
+
+		font-family: 'Montserrat', sans-serif; 
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.1em; /* 18/16 */
+		color: #fff;
+		width: 250px;
+		height: 60px;
+		border-radius: 5px;
+		background-color: #fed136;
+		border: none;		
+	}
+}
+
+
+
+.send-msg {
+	display: fex;
+	flex-wrap: wrap;
+	form {
+		padding-top: 75px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		.form-col {
+			display: flex;		
+			flex-direction: column;
+			input {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				padding-left: 10px;
+				margin: 10px 10px 10px; 
+				width: 350px;
+				height: 50px;
+				border-radius: 5px;
+			}
+		}
+
+		.massage {
+			textarea {
+				padding: 15px;
+				border-radius: 5px;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				margin: 10px 10px 10px; 
+				width: 350px;
+				height: 190px;
+			}
+		}
+	}
+}

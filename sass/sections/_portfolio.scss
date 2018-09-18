@@ -1,0 +1,22 @@
+.portfolio {
+	background-color: 	rgb(247, 247, 247);
+}
+
+.gallery-container {
+	display: flex;
+	justify-content: center;	
+	flex-wrap: wrap;
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.gallery {
+	background-color: #fff;
+	margin: 20px;
+	p {
+		font-style: italic;
+		font-family: 'droid';
+	}
+}

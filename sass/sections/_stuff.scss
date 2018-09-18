@@ -1,0 +1,41 @@
+.stuff {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	
+	.fa-facebook-f {
+		padding: 10px 14px 10px 14px;
+	}
+
+	.fa-pinterest-p {
+		padding: 10px 12px 10px 12px;
+	}
+
+	.fa-google-plus-g {
+		padding: 10px 7px 10px 7px;
+	}
+	.team {
+
+		padding: 50px;
+	}
+}
+
+.employment {
+	background-color: #f7f7f7;
+}
+
+.photo {
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	background-color: #000000;
+	border-radius: 50%;	
+}
+
+.fab {
+	font-size: 18px;
+	padding: 10px;
+	border-radius: 50%;
+	border: 3px solid #000000;
+}
