@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
-	background-color: grey;
+	background-color: $sides;
 }
 
 
@@ -15,12 +15,12 @@ body {
 	margin: 0 auto;
 		
 	h3 {
-		font-family: 'Montserrat', sans-serif;
+		font-family: $header-font-family;
 		text-align: center;
 		display: flex;
 		justify-content: center;
 		margin: 0;		
-		font-size: 3.5em; /* 56/16 */
+		font-size: 3.5em; 
 		text-transform: uppercase;
 	}
 	
@@ -40,24 +40,24 @@ body {
 
 h4 {
 	padding-top: 20px;
-	font-size: 1.375em; /* 22/16 */
+	font-size: 1.375em; 
 	margin: 5px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: $header-font-family;
 }
 
 p {
 	margin: 5px;
 	padding-bottom: 20px;
-	font-family: 'Roboto Slab', serif;
+	font-family: $paragraph-font;
 	font-weight: lighter;
-	color: #777777;
+	color: $paragraph-color;
 }
 
 .container {
 	top: 0;
 	width: 76%;
 	margin: 0 auto;
-	background-color: #fff;
+	background-color: $main-color; 
 }
 
 @media screen and (max-width: 998px) {

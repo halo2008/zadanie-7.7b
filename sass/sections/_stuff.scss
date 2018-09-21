@@ -16,26 +16,25 @@
 		padding: 10px 7px 10px 7px;
 	}
 	.team {
-
 		padding: 50px;
 	}
 }
 
 .employment {
-	background-color: #f7f7f7;
+	background-color: $employment;
 }
 
 .photo {
 	margin: 0 auto;
 	width: 200px;
 	height: 200px;
-	background-color: #000000;
+	background-color: $second-main-color;
 	border-radius: 50%;	
 }
 
 .fab {
-	font-size: 18px;
+	font-size: 1.125em;
 	padding: 10px;
 	border-radius: 50%;
-	border: 3px solid #000000;
+	border: 3px solid $second-main-color;
 }

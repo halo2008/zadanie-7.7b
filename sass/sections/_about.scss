@@ -19,7 +19,6 @@
 		p{
 			margin-left: 50%;
 		}
-
 	}
 	.right {
 		text-align: left;
@@ -35,15 +34,15 @@
 
 .circle-about {
 	text-align: center;
-	background-color: #fed136;
-	border: 7px solid #eeeeee;
+	background-color: $btn-color;
+	border: 7px solid $circle;
 	padding: 30px;
 	border-radius: 50%;
 	p {
-		font-family: 'Montserrat', sans-serif;
+		font-family: $header-font-family;
 		font-weight: bold;
 		text-transform: uppercase;
-		color: #ffffff;
+		color: $main-color;
 		padding-bottom: 1px;
 	}
 }
