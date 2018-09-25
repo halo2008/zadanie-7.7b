@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:300,400");
-@font-face { font-family: 'wisdom'; src: url("/fonts/ThirstyScriptExtraBoldDemo.otf"); }
+@font-face { font-family: 'wisdom'; src: url("../fonts/ThirstyScriptExtraBoldDemo.otf"); }
 
-@font-face { font-family: 'droid'; src: url("/fonts/DroidSerif-Italic.ttf"); }
+@font-face { font-family: 'droid'; src: url("../fonts/DroidSerif-Italic.ttf"); }
 
 body { margin: 0; overflow-x: hidden; background-color: #333333; }
 
@@ -23,7 +23,7 @@ p { margin: 5px; padding-bottom: 20px; font-family: "Roboto Slab", serif; font-w
 
 * { box-sizing: border-box; }
 
-header { background-position: center; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/background-image.png"); height: 70vh; overflow: hidden; width: 100%; background-size: cover; }
+header { background-position: center; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background-image.png"); height: 70vh; overflow: hidden; width: 100%; background-size: cover; }
 
 nav { margin: 0 200px 0 200px; display: -ms-flexbox; display: flex; -ms-flex-flow: row  wrap; flex-flow: row  wrap; padding: 20px; -ms-flex-pack: justify; justify-content: space-between; }
 
@@ -116,7 +116,7 @@ nav ul li:hover { color: #fed136; }
 
 .link img { padding: 75px 20px 75px 20px; }
 
-.contact { background-position: center; background: url("/images/map-image.png"); background-color: #000000; height: 70vh; overflow: hidden; width: 100%; background-size: cover; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.contact { background-position: center; background-image: url("../images/map-image.png"); background-color: #000000; height: 70vh; overflow: hidden; width: 100%; background-size: cover; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .contact h3 { color: #fff; }
 
