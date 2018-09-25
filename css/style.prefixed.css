@@ -263,10 +263,25 @@ nav ul li:hover {
       justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  text-align: center;
+}
+
+.about:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 1px;
+  height: 100%;
+  left: 50%;
+  border-left: 10px solid #eeeeee;
+  transform: translate(-50%);
 }
 
 .about {
-  padding: 20px 0 20px 0;
+  position: relative;
+  z-index: 1;
+  padding: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -301,6 +316,10 @@ nav ul li:hover {
   padding-top: 150px;
 }
 
+.bottom {
+  padding-bottom: 50px;
+}
+
 .circle-about {
   text-align: center;
   background-color: #fed136;
@@ -321,6 +340,9 @@ nav ul li:hover {
   .about {
     -ms-flex-direction: column;
         flex-direction: column;
+  }
+  .about:after {
+    border-left: 0;
   }
   .about .img {
     margin: 0 auto;
