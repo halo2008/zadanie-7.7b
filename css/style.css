@@ -77,6 +77,16 @@ p {
   }
 }
 
+@media screen and (max-width: 798px) {
+  .head-section h3 {
+    font-size: 2.25em;
+    /* 36/16 */
+  }
+  .head-section p {
+    text-align: center;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -84,48 +94,68 @@ p {
 header {
   background-position: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-image.png);
-  height: 70vh;
+  height: 100vh;
   overflow: hidden;
   width: 100%;
   background-size: cover;
 }
 
 nav {
-  margin: 0 200px 0 200px;
+  margin: 0 auto 0 auto;
   display: flex;
-  flex-flow: row  wrap;
+  flex-flow: column;
   padding: 20px;
-  justify-content: space-between;
 }
 
 nav .logo {
-  margin: 0;
+  margin-right: auto;
   font-size: 1.6em;
   font-family: 'wisdom';
   color: #fed136;
+  padding-left: 100px;
 }
 
 nav ul {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 nav ul li {
-  display: flex;
-  flex-flow: row  wrap;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1em;
   list-style-type: none;
-  display: inline-block;
-  padding: 0 20px 0 20px;
+  padding: 15px 20px 0 20px;
   cursor: pointer;
 }
 
 nav ul li:hover {
   color: #fed136;
+}
+
+@media screen and (max-width: 798px) {
+  nav .logo {
+    margin: 0 auto;
+    padding: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .welcome {
+    padding-top: 5vh;
+  }
+  header {
+    height: 200vh;
+  }
 }
 
 .welcome {
@@ -142,10 +172,6 @@ nav ul li:hover {
   font-family: 'droid';
 }
 
-.welcome h1 {
-  /* 88/16 */
-}
-
 .welcome button {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -157,12 +183,6 @@ nav ul li:hover {
   border-radius: 5px;
   background-color: #fed136;
   border: none;
-}
-
-@media screen and (max-width: 1198px) {
-  header {
-    height: 100vh;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -467,6 +487,24 @@ nav ul li:hover {
   font-weight: bold;
   margin: 10px 10px 10px;
   width: 350px;
+}
+
+@media screen and (max-width: 798px) {
+  .contact {
+    height: 140vh;
+  }
+  .send-msg form .form-col input {
+    width: 300px;
+  }
+  .send-msg form .massage textarea {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contact {
+    height: 340vh;
+  }
 }
 
 .copyright {

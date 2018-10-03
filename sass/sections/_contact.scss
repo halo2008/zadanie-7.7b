@@ -27,8 +27,6 @@
 	}
 }
 
-
-
 .send-msg {
 	display: fex;
 	flex-wrap: wrap;
@@ -55,5 +53,33 @@
 				@include from-area-style;
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 798px) {
+	.contact {
+		height: 140vh;
+	}
+
+	.send-msg {		
+		form {			
+			.form-col {				
+				input {					
+					width: 300px;							
+				}
+			}
+
+			.massage {
+				textarea {				
+					width: 300px;					
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.contact {
+		height: 340vh;
 	}
 }

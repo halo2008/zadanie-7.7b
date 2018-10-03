@@ -5,42 +5,40 @@
 header {
 	background-position: center;	
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-	url(../images/background-image.png);	
-	height: 70vh;
-	overflow: hidden;	
+	url(../images/background-image.png);
+	height: 100vh;
+	overflow: hidden;
 	width: 100%;
-	background-size: cover;
+	background-size: cover;	
 }
 
 nav {
-	margin: 0 200px 0 200px;
+	margin: 0 auto 0 auto;
 	display: flex;	
-	flex-flow: row  wrap;
-	padding: 20px;
-	justify-content: space-between;
-
-	.logo {		
-		margin: 0;
+	flex-flow: column;
+	padding: 20px;	
+	.logo {
+		margin-right: auto;		
 		font-size: 1.6em;		
 		font-family: 'wisdom';
 		color: #fed136;
+		padding-left: 100px;
 	}
 
 	ul {		
 		margin: 0;
 		font-family: $header-font-family;    	
-    	padding:0;    	
-		
-		li {
-			display: flex;
-			flex-flow: row  wrap;
+    	padding:0;
+    	display: flex;    	
+		flex-direction: row;
+		justify-content: flex-end;
+		li {			
 			color: #fff;
 			font-weight: bold;
 			text-transform: uppercase;
 			font-size: 1em;
-			list-style-type: none;
-			display: inline-block;			
-			padding: 0 20px 0 20px;
+			list-style-type: none;		
+			padding: 15px 20px 0 20px;
 			cursor: pointer;
 			&:hover {
 				color: $btn-color;
@@ -49,8 +47,31 @@ nav {
 	}
 }
 
-.welcome {
-	
+@media screen and (max-width: 798px) {
+	nav {	
+		.logo {
+			margin: 0 auto;
+			padding: 0;
+		}
+		ul { 
+			display: flex;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		    flex-direction: column;
+		    text-align: center;
+		}
+	}
+
+	.welcome {
+		padding-top: 5vh;
+	}
+
+	header {
+		height: 200vh;
+	}
+}
+
+.welcome {	
 	text-transform: uppercase;
 	font-family: $header-font-family;
 	color: $main-color;
@@ -63,18 +84,14 @@ nav {
 		font-family: 'droid';
 	}
 
-	h1 {/* 88/16 */
-	}
-	button {
+	 button {
 		@include btn;
 	}
 	
 }
 
-@media screen and (max-width: 1198px) {
-    header {
-		height: 100vh;    			
-	}		
+@media screen and (min-width: 1198px) {
+   	
 }
 
 @media screen and (max-width: 900px) {
